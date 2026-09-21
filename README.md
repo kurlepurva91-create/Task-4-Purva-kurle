@@ -2,43 +2,55 @@
 
 ## Student Details
 
-**Student:** Purva Kurle
-**Project:** Project 4 — Currency Converter
+**Student:** Purva Kurle  
+**Project:** Project 4 — Currency Converter  
 **Language:** Java
 
 ## Objective
 
-The objective of this project is to create a Java-based Currency Converter application that allows users to convert an amount from one currency to another using predefined exchange rates.
+The objective of this project is to create a Java-based Currency Converter application that converts different currencies into Indian Rupees (INR) using predefined exchange rates.
 
 ## Features
 
-* Displays a currency conversion menu.
-* Allows users to enter an amount.
-* Allows users to select the source currency.
-* Allows users to select the target currency.
-* Converts the entered amount into the selected currency.
-* Displays the converted amount.
-* Provides a simple and easy-to-use interface.
+* Converts USD to INR.
+* Converts EUR to INR.
+* Converts GBP to INR.
+* Converts AUD to INR.
+* Allows users to enter the amount to be converted.
+* Rejects negative amounts.
+* Validates the user's menu choice.
+* Displays the converted amount rounded to two decimal places.
+* Allows users to perform multiple conversions.
+* Provides an exit option.
 
 ## Concepts Used
 
 * Java
+* BigDecimal
+* RoundingMode
 * Scanner class
 * Variables
 * Arithmetic operations
 * Switch statement
+* While loop
 * Conditional statements
-* Loops
 * User input
-* Currency conversion
 * Input validation
 
 ## Currency Operations
 
-* **Enter Amount** — Takes the amount to be converted from the user.
-* **Select Currency** — Allows the user to select the source and target currencies.
-* **Convert Currency** — Calculates and displays the converted amount.
+* **USD to INR** — Converts US Dollars into Indian Rupees.
+* **EUR to INR** — Converts Euros into Indian Rupees.
+* **GBP to INR** — Converts British Pounds into Indian Rupees.
+* **AUD to INR** — Converts Australian Dollars into Indian Rupees.
 * **Exit** — Closes the Currency Converter application.
+
+## Exchange Rates Used
+
+* **1 USD = ₹83.50**
+* **1 EUR = ₹90.50**
+* **1 GBP = ₹105.00**
+* **1 AUD = ₹54.50**
 
 ## How to Run
 
@@ -54,31 +66,42 @@ Run the program:
 
     ===== CURRENCY CONVERTER =====
     1. USD to INR
-    2. INR to USD
-    3. EUR to INR
-    4. INR to EUR
+    2. EUR to INR
+    3. GBP to INR
+    4. AUD to INR
     5. Exit
 
     Enter your choice: 1
     Enter amount: 100
-    Converted Amount: ₹8300.0
+    Converted Amount: ₹8350.00
 
-### USD to INR Example
-
-    Enter your choice: 1
-    Enter amount: 100
-    ₹8300.0
-
-### INR to USD Example
+### EUR to INR Example
 
     Enter your choice: 2
-    Enter amount: 8300
-    $100.0
+    Enter amount: 100
+    Converted Amount: ₹9050.00
+
+### GBP to INR Example
+
+    Enter your choice: 3
+    Enter amount: 100
+    Converted Amount: ₹10500.00
+
+### AUD to INR Example
+
+    Enter your choice: 4
+    Enter amount: 100
+    Converted Amount: ₹5450.00
+
+### Invalid Amount Example
+
+    Enter amount: -100
+    Please enter a valid positive amount.
 
 ### Exit Example
 
     Enter your choice: 5
-    Thank you for using Currency Converter.
+    Thank you!
 
 ## Output Screenshot
 
@@ -93,4 +116,4 @@ Run the program:
 
 ## Conclusion
 
-This project helped me understand Java programming concepts such as user input, variables, conditional statements, switch statements, loops, and arithmetic operations. It also helped me understand how to create a simple Currency Converter application using Java.
+This project helped me understand Java concepts such as BigDecimal, Scanner, switch statements, loops, conditional statements, and input validation. It also helped me understand how currency conversion can be performed using predefined exchange rates and how to display accurate results with two decimal places.
